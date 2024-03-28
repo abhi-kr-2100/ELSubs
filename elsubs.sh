@@ -11,3 +11,4 @@ ls -d -1 $1/$1-FRAMES/top/*.jpeg | tesseract - - -l $2 -c page_separator="" | ca
 ls -d -1 $1/$1-FRAMES/bottom/*.jpeg | tesseract - - -l eng -c page_separator="" | cat > $1/$1.bottom.txt
 
 dedupe.py $1/$1.top.txt $1/$1.bottom.txt
+sentencify.py $1/$1.top.txt $1/$1.bottom.txt

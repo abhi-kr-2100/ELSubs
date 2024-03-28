@@ -12,7 +12,7 @@ Make sure you've the following tools installed and available on your `PATH` vari
 * tesseract
 * python3
 
-Afterwards, put `elsubs.sh` and `dedupe.py` on your `$PATH`.
+Afterwards, put `elsubs.sh`, `dedupe.py`, and `sentencify.py` on your `$PATH`.
 
 ## Usage
 
