@@ -18,7 +18,7 @@ def main():
     duplicate_line_indexes = set(
         line_idx
         for line_idx in range(1, num_lines)
-        if all(content[line_idx] == content[line_idx - 1] for content in contents)
+        if contents[0][line_idx] == contents[0][line_idx - 1]
     )
 
     for file_idx, file in enumerate(files):
