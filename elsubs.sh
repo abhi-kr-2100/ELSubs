@@ -9,3 +9,5 @@ for f in $1/$1-FRAMES/frame_*; do convert $f -crop 854x25+0+410 -threshold 55% -
 
 ls -d -1 $1/$1-FRAMES/top/*.jpeg | tesseract - - -l $2 -c page_separator="" | cat > $1/$1.top.txt
 ls -d -1 $1/$1-FRAMES/bottom/*.jpeg | tesseract - - -l eng -c page_separator="" | cat > $1/$1.bottom.txt
+
+dedupe.py $1/$1.top.txt $1/$1.bottom.txt

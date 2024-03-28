@@ -10,8 +10,9 @@ Make sure you've the following tools installed and available on your `PATH` vari
 * ffmpeg
 * convert (part of ImageMagik)
 * tesseract
+* python3
 
-Afterwards, just put `elsubs.sh` to a convinient location.
+Afterwards, put `elsubs.sh` and `dedupe.py` on your `$PATH`.
 
 ## Usage
 
